@@ -13,7 +13,23 @@ public class Ammo : MonoBehaviour
     public int ammoBoxAmount;
 
     public bool inreach;
-   
+
+
+
+    void Start()
+    {
+        
+        
+        pickUpText.SetActive(false);
+
+        
+
+    }
+
+
+
+
+
 
     void OnTriggerEnter(Collider other)
     {

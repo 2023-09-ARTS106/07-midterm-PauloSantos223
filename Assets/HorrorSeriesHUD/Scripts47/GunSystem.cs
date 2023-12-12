@@ -68,7 +68,6 @@ public class GunSystem : MonoBehaviour
         originalRotation = transform.localEulerAngles;
         initialPosition = transform.localPosition;
 
-
     }
 
 
@@ -240,11 +239,6 @@ public class GunSystem : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range)) ;
 
-        Target target = hit.transform.GetComponent<Target>();
-        if (target != null)
-        {
-            target.TakeDamage(damage);
-        }
 
     }
 
